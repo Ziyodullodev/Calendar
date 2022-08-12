@@ -1,0 +1,30 @@
+<style>
+    .month {
+        padding: 50px;
+        /* margin-top: 5%; */
+    }
+    td, th {
+        padding: 15px;
+        /* margin: 5px; */
+        font-size: 20px;
+        font-family: sans-serif;
+        /* margin-left: 20px; */
+    }
+    .sat , .sun {
+        color: red;
+    }
+
+    .today {
+        border: 1px solid green;
+        /* font-size: 35px; */
+        color: rgb(8, 8, 8);
+        background-color: rgb(253, 253, 253);
+    }
+</style>
+<center>
+<h1>Calendar {{ year }} </h1>
+
+{{ calendar | safe }}
+<br>
+
+</center>
